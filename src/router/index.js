@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PlaceholderView from '../views/PlaceholderView.vue'
+import Patentincoming from '../views/Patentincoming/index.vue'
+import Trademarkincoming from '../views/Trademarkincoming/index.vue'
 
 const routes = [
   { path: '/', redirect: '/patent/electronic' },
   {
     path: '/patent/electronic',
     name: 'patent-electronic',
-    component: PlaceholderView,
+    component: Patentincoming,
     meta: { title: '专利电子来文' },
   },
   {
@@ -18,7 +20,7 @@ const routes = [
   {
     path: '/trademark/electronic',
     name: 'trademark-electronic',
-    component: PlaceholderView,
+    component: Trademarkincoming,
     meta: { title: '商标电子来文' },
   },
   {
